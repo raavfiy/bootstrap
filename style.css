@@ -1,0 +1,64 @@
+/* Hero Section Styling */
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url('gymbg.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 500px;
+}
+
+/* Card Image Consistency */
+.card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+
+/* Hover Effect */
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.12) !important;
+}
+
+/* Animation */
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Global Adjustments */
+body {
+    scroll-behavior: smooth;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Warna Kustom untuk Header Tabel Harga */
+.header-biru {
+    background-color: #0056b3 !important; /* Ganti warna biru di sini */
+}
+
+.header-hijau {
+    background-color: #6e0000 !important; /* Ganti warna hijau di sini */
+}
+
+.header-kuning {
+    background-color: #ffc107 !important; /* Ganti warna kuning di sini */
+}
+
+/* Opsional: Biar tombolnya juga mengikuti warna kustom jika ingin diganti total */
+.btn-success {
+    background-color: #000000;
+    border-color: #198754;
+}
